@@ -1,0 +1,32 @@
+{
+    "name": "binlq0/laravel-adminlte",
+    "description": "Integrate AdminLTE Template with Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Guna Wirawan",
+        "email": "gunawirawan.code@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "almasaeed2010/adminlte": "3.1.*",
+        "laravel/framework": "^8.12"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3",
+        "orchestra/testbench": ">=4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Binlq0\\LaravelAdminLte\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Binlq0\\LaravelAdminLte\\AdminLteServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
